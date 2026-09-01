@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local server and tooling output
+node_modules/
+dist/
+.cache/
+
+# Environment files
+.env
+.env.*
+!.env.example

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Static R visualizations"
+    >
+    <title>Global Digital Access | Briseida Sanchez</title>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+
+  <body class="visualization-page">
+    <header class="site-header">
+      <a class="wordmark" href="../index.html" aria-label="Briseida Sanchez, home">BS</a>
+      <nav aria-label="Primary navigation">
+        <a href="../index.html#projects"><span aria-hidden="true">←</span> Back to projects</a>
+      </nav>
+    </header>
+
+    <main class="viz-main" id="top">
+      <header class="viz-hero">
+        <p class="eyebrow">Static Data Visualization</p>
+        <h1 class="viz-page-title">Global Digital Access</h1>
+        <p class="viz-lede">
+         Two visualization studies created in R exploring differences in mobile and Internet adoption across countries.
+        </p>
+      </header>
+
+      <article aria-label="Global Digital Access visualizations">
+        <section class="viz-study" aria-labelledby="mobile-adoption-title">
+          <header class="viz-study-heading">
+            <p class="group-number" aria-hidden="true">01</p>
+            <div>
+              <h2 id="mobile-adoption-title">Mobile Adoption Across Human Development Levels</h2>
+              <p class="viz-subtitle">
+                An R visualization exploring how mobile phone adoption evolved
+                across HDI groups from 1990 to 2019.
+              </p>
+            </div>
+          </header>
+
+          <figure class="viz-figure">
+            <img
+              src="../assets/images/mobile-subscriptions-hdi.png"
+              width="7680"
+              height="5100"
+              alt="Small-multiple line charts showing mobile phone subscriptions per 100 people from 1990 to 2019 across six HDI groups."
+            >
+            <figcaption>Scroll horizontally to inspect the full visualization on smaller screens.</figcaption>
+          </figure>
+
+          <div class="viz-analysis-grid">
+            <section class="viz-copy-block" aria-labelledby="mobile-question">
+              <h3 id="mobile-question">Question</h3>
+              <p>
+                How did the timing and scale of mobile phone adoption differ
+                across countries at different levels of human development?
+              </p>
+            </section>
+
+            <section class="viz-copy-block" aria-labelledby="mobile-findings">
+              <h3 id="mobile-findings">Key Findings</h3>
+              <ul>
+                <li>Mobile adoption accelerated across all HDI groups during the 2000s, but higher-HDI countries reached widespread adoption earlier.</li>
+                <li>By the 2010s, median subscriptions exceeded 100 per 100 people in the upper-middle, high, and very high HDI groups.</li>
+                <li>Differences between development groups narrowed over time, although lower-HDI countries continued to show lower adoption levels.</li>
+              </ul>
+            </section>
+
+            <section class="viz-copy-block" aria-labelledby="mobile-design">
+              <h3 id="mobile-design">Visualization Design</h3>
+              <ul>
+                <li>Countries were divided into six HDI groups to support comparisons between similar development levels.</li>
+                <li>All countries appear in grey to preserve the overall distribution.</li>
+                <li>The five highest-ranked countries in each group are highlighted and directly labeled.</li>
+                <li>Group medians provide a more stable reference than individual country trajectories.</li>
+                <li>The 2007 iPhone launch is included as a contextual reference rather than as a causal claim.</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+
+        <section class="viz-study" aria-labelledby="internet-use-title">
+          <header class="viz-study-heading">
+            <p class="group-number" aria-hidden="true">02</p>
+            <div>
+              <h2 id="internet-use-title">Internet Use Across World Regions</h2>
+              <p class="viz-subtitle">Top-performing countries and regional benchmarks in 2016.</p>
+            </div>
+          </header>
+
+          <figure class="viz-figure">
+            <img
+              src="../assets/images/internet-use-regions.png"
+              width="7680"
+              height="4700"
+              loading="lazy"
+              alt="Small-multiple horizontal bar charts comparing regional Internet-use rates and the top countries in six world regions in 2016."
+            >
+            <figcaption>Scroll horizontally to inspect the full visualization on smaller screens.</figcaption>
+          </figure>
+
+          <div class="viz-analysis-grid">
+            <section class="viz-copy-block" aria-labelledby="internet-question">
+              <h3 id="internet-question">Question</h3>
+              <p>
+                How did Internet adoption among the leading countries in each
+                region compare with regional and global levels?
+              </p>
+            </section>
+
+            <section class="viz-copy-block" aria-labelledby="internet-findings">
+              <h3 id="internet-findings">Key Findings</h3>
+              <ul>
+                <li>Europe and Central Asia and East Asia and Pacific contained many countries with Internet use above 80%.</li>
+                <li>Leading countries in most regions exceeded the global average of 45.8%.</li>
+                <li>South Asia and Sub-Saharan Africa showed considerably lower regional adoption, even when some individual countries performed substantially better.</li>
+              </ul>
+            </section>
+
+            <section class="viz-copy-block" aria-labelledby="internet-design">
+              <h3 id="internet-design">Visualization Design</h3>
+              <ul>
+                <li>Separate panels prevent countries from regions with lower adoption from disappearing within a single global ranking.</li>
+                <li>The dotted line creates a consistent global benchmark.</li>
+                <li>The darker regional bar distinguishes the aggregate from the country rankings.</li>
+                <li>Countries are ordered within each region to support rapid comparison.</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="viz-footer">
+      <p>Briseida Sanchez <span aria-hidden="true">·</span> Data Scientist</p>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
+</html>
